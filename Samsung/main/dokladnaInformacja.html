@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dokladna Informacja</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="topnav">
+        <a href="../index.html">Strona Główna</a>
+        <a href=camera.html>Camera</a>
+        <a class="active" href=dokladnaInformacja.html>dokladna informacja</a>
+        <a href=wiecej.html>Więcej</a>
+    </div>
+    <header class="header">
+      <h1 class="gl">Kolory Samsungu S21</h1>
+  </header>
+    <div class="cont">
+      <div class="flex-container , text" id="thumb-img">
+          <div class="thumb-img1" onclick="changeImage('../css/img/Phantom_grey.png')">1.Phantom_grey</div>
+          <div class="thumb-img2" onclick="changeImage('../css/img/Phantom_pink.png')">2.Phantom_pink</div>
+          <div class="thumb-img3" onclick="changeImage('../css/img/Phantom_silver.png')">3.Phantom_silver</div>
+          <div class="thumb-img4" onclick="changeImage('../css/img/Phantom_violet.png')">4.Phantom_violet</div>
+          <div class="thumb-img5" onclick="changeImage('../css/img/Phantom_white.png')">5.Phantom_white</div>
+        </div>
+      <div id="img">
+        <img id='main-img' src="../css/img/beta1.png"  width="675px" height="450px" >
+      </div>
+    </div>
+    <div class="footer">
+        <p>Nasz instagram:</p>
+        <a href="https://instagram.com/samsung"> <img src="../css/img/1b2ca367caa7eff8b45c09ec09b44c16-instagram-icon-logo-by-vexels.png" width="40px" height="40px" alt=""></a>
+      </div>
+</body>
+<script src="https://code.jquery.com/jquery-2.1.0.js"></script>
+<script >
+    $("h1").fadeOut(0).fadeIn(3000);
+    $("p").fadeOut(0).fadeIn(3000);
+    $("a").fadeOut(0).fadeIn(3000);
+    $("img").fadeOut(0).fadeIn(3000);
+
+// ---------------------------------------------------------------------
+
+function changeImage(a) {
+        document.getElementById("main-img").src=a;
+        document.getElementById("main-img").style.height='360px'
+        document.getElementById("main-img").style.width='285px'
+        document.getElementById("main-img").style.marginLeft='50px'
+        $("#main-img").fadeOut(0).fadeIn(2000);
+    }
+
+</script>
+</html>
